@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Instrument+Sans:wght@400;600;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@700&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono:wght@700&family=Zeyada&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator App</title>
+  </head>
+  <body class="default">
+    <div class="container">
+      <div class="header">
+        <span class="calc">calc</span>
+        <div class="theme-section">
+          <div class="input-range">
+            <div class="mode-changer">
+              <span class="mode-num">1</span>
+              <span class="mode-num">2</span>
+              <span class="mode-num">3</span>
+            </div>
+
+            <div class="theme-changer">
+              <div class="mode-item"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input class="screen" type="text" disabled placeholder="0" />
+      </div>
+      <div class="keyboard">
+        <div class="number-btns">
+          <button class="btn numeric">7</button>
+          <button class="btn numeric">8</button>
+          <button class="btn numeric">9</button>
+          <button class="btn del">DEL</button>
+          <button class="btn numeric">4</button>
+          <button class="btn numeric">5</button>
+          <button class="btn numeric">6</button>
+          <button class="btn operations">+</button>
+          <button class="btn numeric">1</button>
+          <button class="btn numeric">2</button>
+          <button class="btn numeric">3</button>
+          <button class="btn operations">-</button>
+          <button class="btn numeric">.</button>
+          <button class="btn numeric">0</button>
+          <button class="btn operations">/</button>
+          <button class="btn operations">x</button>
+        </div>
+        <div class="reset-btn">
+          <button class="reset last-btn">RESET</button>
+          <button class="equal last-btn operations">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

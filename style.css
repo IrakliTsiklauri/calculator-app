@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: #3a4663;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 340px;
+}
+
+.calc {
+  color: #fff;
+  font-size: 32px;
+}
+
+.mode-changer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.theme-changer {
+  width: 71px;
+  height: 26px;
+  display: flex;
+  background-color: #242d44;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+.mode-item {
+  width: 16px;
+  height: 16px;
+  background-color: #d03f2f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mode-item:hover {
+  background-color: #f96b5b;
+}
+
+.input-changer input {
+  width: 71px;
+}
+
+.theme-section {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  color: #fff;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.mode-num {
+  color: #fff;
+}
+
+.screen {
+  border-radius: 10px;
+  background-color: #181f33;
+  text-align: right;
+  padding: 25px 32px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  width: 100%;
+  font-size: 56px;
+  border: none;
+  color: #fff;
+}
+
+.keyboard {
+  border-radius: 10px;
+  background-color: #242d44;
+  padding: 32px;
+}
+
+.number-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.btn {
+  width: 21%;
+  padding: 13px;
+  border-radius: 10px;
+  background-color: #eae3dc;
+  box-shadow: 0px -4px 0px 0px #b3a497 inset;
+  color: #434a59;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: 40px;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #fffffe;
+  box-shadow: 0px -4px 0px 0px #b3a497 inset;
+}
+
+.del {
+  background-color: #647198;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+  color: #fff;
+  font-size: 28px;
+}
+
+.del:hover {
+  cursor: pointer;
+  background-color: #a2b2e1;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+}
+
+.reset-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 24px;
+}
+
+.last-btn {
+  border-radius: 10px;
+  padding: 13px;
+  font-family: "League Spartan", sans-serif;
+  color: #fff;
+  width: 47%;
+}
+
+.reset {
+  background-color: #647198;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+  font-size: 25px;
+  transition: 0.3s;
+  border: none;
+}
+
+.reset:hover {
+  cursor: pointer;
+  background-color: #a2b2e1;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+}
+
+.equal {
+  background: #d03f2f;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
+  font-size: 25px;
+  transition: 0.3s;
+  border: none;
+}
+
+.equal:hover {
+  cursor: pointer;
+  background-color: #f96b5b;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
+}
+
+@media (max-width: 550px) {
+  .container {
+    max-width: 375px;
+  }
+
+  .header {
+    gap: 130px;
+  }
+
+  .screen {
+    padding: 29px 24px 22px auto;
+  }
+
+  .result {
+    font-size: 40px;
+  }
+
+  .keyboard {
+    padding: 24px;
+  }
+
+  .number-btns {
+    gap: 13px;
+  }
+
+  .btn {
+    width: 21%;
+    padding: 13px;
+    border-radius: 5px;
+    font-size: 32px;
+  }
+
+  .reset-btn {
+    gap: 13px;
+    margin-top: 13px;
+  }
+
+  .reset {
+    font-size: 20px;
+  }
+
+  .equal {
+    font-size: 20px;
+  }
+}
+
+/*********************************/
+/* LIGHT MODE STYLES*/
+/*********************************/
+
+.light {
+  background-color: #e6e6e6;
+  color: #36362c;
+}
+
+.light .input-changer input {
+  width: 71px;
+}
+
+.light .calc {
+  color: #36362c;
+  font-size: 32px;
+}
+
+.light .mode-changer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.light .theme-changer {
+  background-color: #d2cdcd;
+  display: flex;
+  justify-content: center;
+}
+
+.light .mode-item {
+  background-color: #d03f2f;
+}
+
+.light .mode-item:hover {
+  cursor: pointer;
+  background-color: #f96b5b;
+}
+
+.light .mode-num {
+  color: #36362c;
+}
+
+.light-section {
+  color: #36362c;
+}
+
+.light .screen {
+  border-radius: 10px;
+  text-align: right;
+  padding: 25px 32px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  width: 100%;
+  font-size: 56px;
+  border: none;
+  color: #36362c;
+  background-color: #eee;
+}
+
+.light .result {
+  color: #36362c;
+}
+
+.light .keyboard {
+  border-radius: 10px;
+  padding: 32px;
+  background-color: #d2cdcd;
+}
+.light .btn {
+  width: 21%;
+  padding: 13px;
+  border-radius: 10px;
+  box-shadow: 0px -4px 0px 0px #a79e91 inset;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  border: none;
+  transition: 0.3s;
+  background-color: #e5e4e1;
+  color: #36362c;
+}
+
+.light .btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #36362c;
+}
+
+.light.del {
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+  background-color: #378187;
+  color: #fff;
+}
+
+.light .del:hover {
+  cursor: pointer;
+  background-color: #62b5bc;
+}
+
+.light .reset {
+  background-color: #378187;
+  color: #fff;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+  font-size: 25px;
+  transition: 0.3s;
+  border: none;
+}
+
+.light .reset:hover {
+  cursor: pointer;
+  background-color: #62b5bc;
+}
+
+.light .equal {
+  background-color: #c85402;
+  color: #fff;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
+  font-size: 25px;
+  transition: 0.3s;
+  border: none;
+}
+
+.light .equal:hover {
+  cursor: pointer;
+  background-color: #ff8a38;
+}
+
+/*********************************/
+/* DARK MODE STYLES */
+/*********************************/
+
+.dark {
+  background-color: #17062a;
+  color: #ffe53d;
+}
+
+.dark .calc {
+  color: #ffe53d;
+}
+
+.dark .mode-num {
+  color: #ffe53d;
+}
+.dark .mode-changer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dark .mode-changer:hover {
+  cursor: pointer;
+  background-color: #1e0936;
+}
+
+.dark .theme-changer {
+  background-color: #1e0936;
+  display: flex;
+  justify-content: end;
+}
+
+.dark .mode-item {
+  background-color: #6cf9f1;
+}
+
+.dark .mode-item:hover {
+  cursor: pointer;
+  background-color: #93fff8;
+}
+
+.dark .screen {
+  background-color: #1e0936;
+  color: #ffe53d;
+}
+
+.dark .result {
+  color: #ffe53d;
+}
+
+.dark .keyboard {
+  background-color: #1e0936;
+}
+.dark .btn {
+  background-color: #331c4d;
+  box-shadow: 0px -4px 0px 0px #881c9e inset;
+  color: #ffe53d;
+}
+
+.dark .btn:hover {
+  cursor: pointer;
+  background-color: #6c34ac;
+  box-shadow: 0px -4px 0px 0px #881c9e inset;
+  color: #ffe53d;
+}
+
+.dark .del {
+  background-color: #56077c;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+  color: #fff;
+}
+
+.dark .del:hover {
+  cursor: pointer;
+  background-color: #8631af;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+  color: #fff;
+}
+
+.dark .reset {
+  background-color: #56077c;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+  color: #fff;
+}
+
+.dark .reset:hover {
+  cursor: pointer;
+  background-color: #8631af;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+  color: #fff;
+}
+
+.dark .equal {
+  background-color: #00ded0;
+  box-shadow: 0px -4px 0px 0px #6cf9f1 inset;
+  color: #1a2327;
+}
+
+.dark .equal:hover {
+  cursor: pointer;
+  background-color: #93fff8;
+  box-shadow: 0px -4px 0px 0px #6cf9f1 inset;
+  color: #1a2327;
+}
